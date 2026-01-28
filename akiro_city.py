@@ -1,1 +1,1 @@
-print("test v0.1")
+print("test v0.1 AKiroOS")
