@@ -1,14 +1,14 @@
-# NOTE(v0.1): Prototype script. Messy by design.
+# NOTE(v0.1): Prototype script. Messy by design. 
 # Questions answered inline while experimenting.
-# v0.1 have zero libs, packages, or advanced structures.
+# v0.1 have only random and time modules imported for simulating city events.
 
-import random
-import time 
+import random # For random events
+import time # For simulating time passage
 
 # City State
 population = 100
 money = 1000
-food = 500 
+food = 500
 power = 300
 happiness = 75  # out of 100
 year = 1
@@ -30,6 +30,13 @@ def year_update(): # Update city state for the year
     else:
         food = 0
         happiness -= 10  # lack of food reduces happiness
+    
+    if food < food_consumption: # Food shortage event
+        print("⚠ Food shortage! Happiness decreased.")
+
+    if random.random() < 0.2:  # 20% chance of a festival
+        print("Festival held! Happiness increased.")
+        happiness += 5
 
     # Power consumption (simplified)
     power_consumption = population  # each person consumes 1 unit of power

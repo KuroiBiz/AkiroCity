@@ -43,6 +43,18 @@ AkiroCity will evolve over time as systems are added and the codebase is refacto
 
 ---
 
+## 🛣️ Roadmap
+
+- 💾 Save progress *(v0.2)*
+- 🔐 Auth (login & sign-up) *(v0.2)*
+- 📦 JSON I/O for auth & data *(v0.2)*
+- 🧩 Split code into multiple files *(v0.2)*
+
+- 🎨 Rich terminal UI *(v0.3)*
+- 🏪 Stores & additional buildings *(v0.3)*
+
+---
+
 ## 🚀 Getting Started
 
 ### Requirements
@@ -50,4 +62,4 @@ AkiroCity will evolve over time as systems are added and the codebase is refacto
 
 ### Run
 ```bash
-python akirocity.py
+python akiro_city.py
